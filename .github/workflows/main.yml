@@ -2,7 +2,7 @@ name: Go CI/CD
 
 on:
   push:
-    branches: ["master"]
+    branches: ["main"]
 
 jobs:
   build-test:
@@ -84,3 +84,4 @@ jobs:
             git pull || true       # kalau project Anda ada di server
             docker-compose pull
             docker-compose up -d
+            docker system prune -f
