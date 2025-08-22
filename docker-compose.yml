@@ -1,0 +1,6 @@
+services:
+  golang-app:
+    image: ara125/golang-app:latest
+    restart: always
+    ports:
+      - "8012:8012"
